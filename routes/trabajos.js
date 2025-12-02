@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Trabajo = require('../models/trabajo');
+const Trabajo = require('../models/Trabajo');
 const auth = require('../middleware/Auth');
 
 //Obtener todos los trabajos del usuario
