@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Horario = require('../models/Horario');
-const auth = require('../middleware/auth');
+const auth = require('../middleware/Auth');
 
 //Obtener todo el horario del usuario
 router.get('/', auth,async(req,res)=>{
