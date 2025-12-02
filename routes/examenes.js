@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Examen = require('../models/Examen');
-const auth = require('../middleware/Auth');
+const auth = require('../middleware/auth');
 
 //Obtener todos los examenes del usuario
 router.get('/', auth, async (req, res) =>{
