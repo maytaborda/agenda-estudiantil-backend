@@ -9,7 +9,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://agenda-estudiantil-frontend.vercel.app/'  // ← AGREGA TU URL DE VERCEL AQUÍ
+    /https:\/\/.*\.vercel\.app$/
   ],
   credentials: true
 }));
