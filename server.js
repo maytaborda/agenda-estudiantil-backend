@@ -7,10 +7,9 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: [
-    'http://localhost:3000',
-    /https:\/\/.*\.vercel\.app$/
-  ],
+  origin: "https://agenda-estudiantil-frontend.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
+  allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true
 }));
 app.use(express.json());
