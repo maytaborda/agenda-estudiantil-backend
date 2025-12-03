@@ -5,8 +5,14 @@ require('dotenv').config();
 
 const app = express();
 
-//Middleware
-app.use(cors());
+// Middleware
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'https://agenda-estudiantil-frontend.vercel.app/'  // ← AGREGA TU URL DE VERCEL AQUÍ
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 //Conectar a MongoDB
